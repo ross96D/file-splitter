@@ -4,7 +4,7 @@ The simplest tool to split a file and join it again.
 Sending files through the network in a splitted way and joining them on the other side. 
 For this reason, this is both a package and a cli tool.
 
-# How to use
+# Getting started
 Install with `go install github.com/ross96D/file-splitter/cmd/file-splitter@latest`
 
 If wanna use it as package `go get github.com/ross96D/file-splitter`
