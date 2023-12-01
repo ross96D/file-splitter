@@ -14,6 +14,6 @@ To split a file:
 
 `file-splitter split -o <output-file-path> -s <size-of-the-file> <path-of-the-file-to-be-splitted>`
 
-To join an splitted file:
+To join a splitted file:
 
 `file-splitter split -o <output-file-path> <path-of-the-file-to-be-join.part0>`
