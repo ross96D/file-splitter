@@ -1,0 +1,6 @@
+version: '3'
+tasks:
+  build:
+    cmds:
+      - go build -o ./out/bin/fsplit ./cmd/file-splitter/main.go
+      - cp ./out/bin/fsplit /home/abelardo/.bin/fsplit
