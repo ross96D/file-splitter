@@ -21,14 +21,12 @@ fsplit split -o <output-file-path> -s <size-of-the-file> <path-of-the-file-to-be
 		if err != nil {
 			panic(err)
 		}
-		println("SSSSSSSSs")
 		defer f.Close()
 		err = filesplitter.SplitFile(f, output, int64(sizeSplit))
 		if err != nil {
 			println("ERR")
 			panic(err)
 		}
-		println("SSSSSSSSs")
 	},
 }
 

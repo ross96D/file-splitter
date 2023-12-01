@@ -12,7 +12,7 @@ var joinCommand cobra.Command = cobra.Command{
 	Short: "Split the select file into pieces",
 	Long: `With this command you can join a partitioned file. The partitioned selected must finish with .part0
 
-fsplit join -o <output-file-path> -s <size-of-the-file> <path-of-the-file-to-be-join.part0>`,
+fsplit join -o <output-file-path> <path-of-the-file-to-be-join.part0>`,
 	Args: cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
 		f, err := os.Create(output)
