@@ -8,21 +8,10 @@ import (
 	"strings"
 )
 
-func SplitFile(reader io.Reader, filename string, savePath string, size int64) (err error) {
-	_, err = os.Stat(savePath)
-	if err != nil {
-		if os.IsNotExist(err) {
-			return
-		}
-		err = os.Mkdir(savePath, 0666)
-		if err != nil {
-			return
-		}
-	}
-
+func SplitFile(reader io.Reader, filepath string, size int64) (err error) {
 	for i := 0; ; i++ {
 		var f *os.File
-		f, err = os.Create(fmt.Sprintf("%s.part%d", filename, i))
+		f, err = os.Create(fmt.Sprintf("%s.part%d", filepath, i))
 		if err != nil {
 			return err
 		}

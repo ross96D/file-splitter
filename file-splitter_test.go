@@ -10,7 +10,7 @@ func TestSplitJoinFile(t *testing.T) {
 	if err != nil {
 		t.Errorf("%v", err)
 	}
-	err = SplitFile(f, "split.pdf", "./", 1<<20)
+	err = SplitFile(f, "split.pdf", 1<<20)
 	if err != nil {
 		t.Errorf("%v", err)
 	}
